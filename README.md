@@ -47,7 +47,7 @@ This project provides simple, well-structured, and practical examples of both OO
 
 🔍 Searching Algorithms
 
-    - Linear Search
+   - Linear Search
 
    -  Binary Search
 
