@@ -47,7 +47,7 @@ This project provides simple, well-structured, and practical examples of both OO
 
 🔍 Searching Algorithms
 
-   - Linear Search
+   - Linear Search/ Sequential Search 
 
    -  Binary Search
 
@@ -62,6 +62,16 @@ This project provides simple, well-structured, and practical examples of both OO
    - Merge Sort
 
    - Quick Sort
+
+   - Counting Sort
+
+   - Radix Sort
+
+   - Shell Sort
+
+   - Bucket Sort
+
+   - Heap Sort
 
 🧠 Recursion
 
