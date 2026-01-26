@@ -1,4 +1,4 @@
-// Leet Code Problem 2095: Delete the Middle Node of a Linked List
+// Leet Code Problem 1721: Swapping Nodes in a Linked List
 #include<iostream>
 using namespace std;
 
@@ -14,7 +14,7 @@ class ListNode{
         this->next=nullptr;
     }
 };
-class Solution328{
+class Solution1721{
     public:
     ListNode* head=nullptr;
     // Method to insert the elements in linked list
@@ -31,18 +31,26 @@ class Solution328{
         }
     }
 
-    // Method to delete middle node elements from linked list
-    void deleteMiddle() {
-        if(head == nullptr || head->next == nullptr){
-            head=head->next;
+    // Method to swapping the node elements from linked list
+    void swapNodes(int k) {
+        ListNode* temp=head;
+        int count=1;
+        int n=0;
+        while(temp != nullptr){
+            temp=temp->next;
+            n++;
         }
-        ListNode* slow=head;
-        ListNode* fast=head->next;
-        while(fast->next != nullptr && fast->next->next != nullptr){
-            slow=slow->next;
-            fast=fast->next->next;
+        ListNode* first=head;
+        for(int i=1;i<k;i++){
+            first=first->next;
         }
-        slow->next=slow->next->next;
+        ListNode* second=head;
+        for(int i=1;i<n-k+1;i++){
+            second=second->next;
+        }
+        int c=first->data;
+        first->data=second->data;
+        second->data=c;
     }
 
     // Method to display the linked list data
@@ -62,7 +70,7 @@ class Solution328{
 
 // Main function 
 int main(){
-    Solution328 list;
+    Solution1721 list;
     cout<<"Enter number of terms: ";
     int n,value;
     cin>>n;
@@ -73,8 +81,11 @@ int main(){
     }
     cout<<"Original Linked List: ";
     list.display();
-    list.deleteMiddle();
-    cout<<"After deleting middle node element from linked list : ";
+    cout<<"Enter position of node: ";
+    int k;
+    cin>>k;
+    list.swapNodes(k);
+    cout<<"After swapping nodes element of linked list: ";
     list.display();
     return 0;
 }
