@@ -25,15 +25,15 @@ class Node{
 class BinaryTree{
     public:
     int index=-1;
-    Node* buildTree(int nodes[]){
+    Node* buildTree(int nodes[],int k){
         index++;
-        if(nodes[index] == -1){
+        if(index >= k || nodes[index] == -1){
             return nullptr;
         }
         Node* newNode =new Node(nodes[index]);
         // Recursive Function
-        newNode->left=buildTree(nodes);
-        newNode->right=buildTree(nodes);
+        newNode->left=buildTree(nodes,k); // for left child of Binary Tree(BT)
+        newNode->right=buildTree(nodes,k); // for right child of Binary Tree(BT)
         return newNode;
     }
 };
@@ -51,8 +51,9 @@ int SumOfNodes(Node* root){
 // Main function
 int main(){
     int nodes[]={1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
+    int k=sizeof(nodes)/sizeof(nodes[0]);
     BinaryTree tree;
-    Node* root=tree.buildTree(nodes);
+    Node* root=tree.buildTree(nodes,k);
     cout<<"Root of Binary Tree(BT) is: "<<root->data<<endl;
     cout<<"Sum Of Nodes From Binary Tree(BT): "<<SumOfNodes(root)<<endl;
     return 0;

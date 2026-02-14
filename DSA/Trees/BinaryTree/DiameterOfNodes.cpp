@@ -22,16 +22,16 @@ class Node{
 class BinaryTree{
     public:
     int index=-1;
-    Node* buildTree(int nodes[]){
+    Node* buildTree(int nodes[],int k){
         index++;
-        if(nodes[index] == -1){
+        if(index >= k || nodes[index] == -1){
             return nullptr;
         }
         // Creating New Node
         Node* newNode =new Node(nodes[index]);
         // Recursive Function
-        newNode->left=buildTree(nodes); // for left child of Binary Tree(BT)
-        newNode->right=buildTree(nodes); // for right child of Binary Tree(BT)
+        newNode->left=buildTree(nodes,k); // for left child of Binary Tree(BT)
+        newNode->right=buildTree(nodes,k); // for right child of Binary Tree(BT)
         return newNode;
     }
 };
@@ -62,8 +62,9 @@ int DiameterOfNodes(Node* root){
 // Main function
 int main(){
     int nodes[]={2,4,8,-1,-1,9,10,-1,-1,11,-1,-1,3,6,-1,-1,7,-1,-1};
+    int k=sizeof(nodes)/sizeof(nodes[0]);
     BinaryTree* tree=new BinaryTree();
-    Node* root=tree->buildTree(nodes);
+    Node* root=tree->buildTree(nodes,k);
     cout<<"Root of Binary Tree is: "<<root->data<<endl;
     HeightOfNodes(root);
     cout<<"Diameter Of Binary Tree is: "<<DiameterOfNodes(root)<<endl;

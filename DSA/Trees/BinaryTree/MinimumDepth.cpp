@@ -1,4 +1,4 @@
-// Height Of Node Algorithm Implementation In C++
+// Minimum Depth Of Node Algorithm Implementation In C++
 #include<iostream>
 using namespace std;
 
@@ -36,7 +36,7 @@ class BinaryTree{
     }
 };
 
-// Method to find the Height of Binary Tree(BT) 
+// Method to find the Maximum Depth of Binary Tree(BT) 
 int HeightOfNodes(Node* root){
     if(root == nullptr){
         return 0;
@@ -44,18 +44,25 @@ int HeightOfNodes(Node* root){
     // Recursive function
     int leftHeight=HeightOfNodes(root->left);
     int rightHeight=HeightOfNodes(root->right);
-    return max(leftHeight,rightHeight)+1;
+    
+    if(leftHeight == 0){
+        return rightHeight+1;
+    }
+    if(rightHeight == 0){
+        return leftHeight+1;
+    }
+    return min(leftHeight,rightHeight)+1;
 }
 
 // Main function
 int main(){
-    int nodes[]={3,4,8,-1,-1,9,10,-1,-1,11,-1,-1,3,6,-1,-1,7,-1,-1};
+    int nodes[]={2,4,8,-1,-1,9,10,-1,-1,11,-1,-1,3,6,-1,-1,7,-1,-1};
     int k=sizeof(nodes)/sizeof(nodes[0]);
     BinaryTree* tree=new BinaryTree();
     Node* root=tree->buildTree(nodes,k);
     cout<<"Root of Binary Tree is: "<<root->data<<endl;
     HeightOfNodes(root);
-    cout<<"Height Of Binary Tree is: "<<HeightOfNodes(root)<<endl;
+    cout<<"Minimum Depth Of Binary Tree is: "<<HeightOfNodes(root)<<endl;
     return 0;
 }
 
