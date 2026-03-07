@@ -1,4 +1,4 @@
-// Insert The Element At Beginning Position Of Array Implementation In C++
+// Insert The Element At End Position Of Array Implementation In C++
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -11,9 +11,9 @@ void printArray(vector<int>& arr) {
     cout<<endl;
 }
 
-// Function to insert the beginning position of array
-void insertAtBeginning(vector<int>& arr,int m) {
-    arr.insert(arr.begin(),m);
+// Function to insert the end position of array
+void insertAtEnd(vector<int>& arr,int m) {
+    arr.push_back(m);
 }
 
 // Main function
@@ -28,9 +28,9 @@ int main() {
     }
     cout<<"Print the first array: ";
     printArray(arr);
-    cout<<"Enter element for insert at beginning: ";
+    cout<<"Enter element for insert at end: ";
     cin>>m;
-    insertAtBeginning(arr,n,m);
+    insertAtEnd(arr,n,m);
     cout<<"Insert element in array at beignning: ";
     printArray(arr);
     return 0;
