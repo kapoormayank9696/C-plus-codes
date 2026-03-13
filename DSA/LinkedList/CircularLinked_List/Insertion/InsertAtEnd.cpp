@@ -26,7 +26,7 @@ class CircularLL {
             newNode->next=head;
         }
         Node* temp=head;
-        while(temp != head) {
+        while(temp->next != head) {
             temp=temp->next;
         }
         temp->next=newNode;
@@ -42,7 +42,7 @@ class CircularLL {
             return;
         }
         Node* temp=head;
-        while(temp != head) {
+        while(temp->next != head) {
             temp=temp->next;
         }
         temp->next=newNode;
