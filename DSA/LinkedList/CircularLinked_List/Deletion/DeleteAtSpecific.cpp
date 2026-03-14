@@ -1,4 +1,4 @@
-// Delete First node From Circular Linked List Algorithm Implementation In C++
+// Delete Specific node From Circular Linked List Algorithm Implementation In C++
 #include<iostream>
 using namespace std;
 // Class of Circular Linked List
@@ -35,22 +35,45 @@ class CircularLL {
     }
     
     // Function to delete first node from circular linked list
-    void deleteAtBeginning() {
+    void deleteAtSpecific(int index) {
         if(head == nullptr) {
             cout<<"Empty Circular Linked List!!!!"<<endl;
             return;
-        }
-        if(head->next == nullptr) {
-            head=nullptr;
+        } if(index <= 0) {
+            cout<<"Invalid index!!!!"<<endl;
             return;
         }
-        Node* temp=head;
-        // Find head node
-        while(temp->next != head) {
-            temp=temp->next;
+        // Case 1: Delete first node
+        if(index == 1) {
+            if(head->next == head) {
+                delete head;
+                head = nullptr;
+                return;
+            }
+            Node* last = head;
+            while(last->next != head) {
+                last = last->next;
+            }
+            Node* temp = head;
+            head = head->next;
+            last->next = head;
+            delete temp;
+            return;
         }
-        temp->next=head->next; // last node points to second node
-        head=head->next; // Move head towards
+        // Case 2: Delete node at given position
+        Node* temp = head;
+        int count = 1;
+        while(count < index-1 && temp->next != head) {
+            temp = temp->next;
+            count++;
+        } 
+        if(temp->next == head) {
+            cout<<"Index out of range!!!!"<<endl;
+            return;
+        }
+        Node* delNode = temp->next;
+        temp->next = delNode->next;
+        delete delNode;
     }
 
     // Function to display the circular linked list
@@ -81,8 +104,11 @@ int main() {
     }
     cout<<"Display The Circular Linked List: ";
     list->display();
-    list->deleteAtBeginning();
-    cout<<"Print the Circular Linked List after delete first node: ";
+    int index;
+    cout<<"Enter index for deletion the node: ";
+    cin>>index;
+    list->deleteAtSpecific(index);
+    cout<<"Print the Circular Linked List after delete specific position of node: ";
     list->display();
     return 0;
 }
