@@ -33,7 +33,7 @@ class CircularLL {
         temp->next=newNode;
         newNode->next=head;
     }
-
+    
     // Function to delete first node from circular linked list
     void deleteAtBeginning() {
         if(head == nullptr) {
