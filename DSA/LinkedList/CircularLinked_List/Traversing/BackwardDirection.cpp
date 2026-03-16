@@ -1,5 +1,6 @@
-// Forward Traversing of Circular Linked List Algorithm Implmentation In C++
+// Backward Traversing of Circular Linked List Algorithm Implmentation In C++
 #include<iostream>
+#include<stack>
 using namespace std;
 // Class of Circular Linked List
 class CircularLL{
@@ -19,7 +20,7 @@ class CircularLL{
         }
     };
     Node* head=nullptr;
-
+    
     // Function to insert the node into circular linked list
     void insert(int data) {
         Node* newNode=new Node(data);
@@ -37,17 +38,27 @@ class CircularLL{
         newNode->next=head; // Move head towards
     }
 
-    // Function to forward traversal the circular linked list
-    void forwardTraversal() {
+    // Function to backward traversal the circular linked list
+    void backwardTraversal() {
         if(head == nullptr) {
             cout<<"Empty Circular Linked List!!!!"<<endl;
             return;
         }
+        // Initialized the stack
+        stack<int> st;
         Node* temp=head;
         do{
-            cout<<temp->data<<"<-->";
+            // Store the nodes into stack
+            st.push(temp->data);
             temp=temp->next;
         }while(temp != head);
+        // check stack is empty or not
+        while(!st.empty()) {
+            // Print the top stack node
+            cout<<st.top()<<"<-->";
+            // Remove the node from stack
+            st.pop();
+        }
         cout<<"(head)"<<endl;
     }
 
@@ -79,8 +90,8 @@ int main() {
     }
     cout<<"Display The Circular Linked List: ";
     list->display();
-    cout<<"Forward Traversal Of Circular Linked List: ";
-    list->forwardTraversal();
+    cout<<"Backward Traversal Of Circular Linked List: ";
+    list->backwardTraversal();
     return 0;
 }
 
