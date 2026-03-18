@@ -33,7 +33,9 @@ This project provides simple, well-structured, and practical examples of both OO
 
 ## ✅ DSA Concepts Covered
 
-📊 Arrays
+📊 Arrays(1D, 2D, Reverse, Diagonal Sum, Insert at (beginning, end, specific position))
+
+📊 Strings (Manipulation, Case Conversion, Reverse, Vowel Count)
 
 🔗 Linked List (Singly / Doubly)
 
