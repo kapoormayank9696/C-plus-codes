@@ -68,6 +68,20 @@ class QueueUsingLinked_List{
         return first->data;
     }
 
+    // Search Operation
+    bool search(int value){
+        bool check=false;
+        Node* temp=first;
+        while(temp != nullptr) {
+            if(temp->data == value) {
+                check=true;
+                break;
+            }
+            temp=temp->next;
+        }
+        return check;
+    }
+
     // Display Operation
     void display(){
         if(isEmpty()){
@@ -105,6 +119,14 @@ int main(){
     cout<<"After popped queue data: ";
     queue.display();
     cout<<"New top queue element: "<<queue.peek()<<endl;
+    cout<<"Enter value for searching: ";
+    int value;
+    cin>>value;
+    if(queue.search(value)) {
+        cout<<"Yes,the value exist into queue.."<<endl;
+    }else {
+        cout<<"No,the value is not exist into queue.."<<endl;
+    }
     return 0;
 }
 

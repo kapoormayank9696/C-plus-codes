@@ -59,6 +59,18 @@ class QueueUsingArray{
         return arr[first];
     }
 
+    // Search Operation
+    bool search(int value) {
+        bool check=false;
+        for(int i=first;i<=rear;i++) {
+            if(arr[i] == value) {
+                check=true;
+                break;
+            }
+        }
+        return check;
+    }
+
     // Display the queue data
     void display(){
         if(isEmpty()){
@@ -91,5 +103,13 @@ int main(){
     cout<<"After popped queue data: ";
     queue.display();
     cout<<"New top queue element: "<<queue.peek()<<endl;
+    cout<<"Enter value for searching: ";
+    int value;
+    cin>>value;
+    if(queue.search(value)) {
+        cout<<"Yes,the value exist into queue.."<<endl;
+    }else {
+        cout<<"No,the value is not exist into queue.."<<endl;
+    }
     return 0;
 }
