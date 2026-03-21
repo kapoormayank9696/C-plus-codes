@@ -59,6 +59,20 @@ class StackUsingLinked_List{
         return top->data;
     }
 
+    // Search Operation
+    bool search(int value) {
+        bool check=false;
+        Node* temp=top;
+        while(temp != nullptr) {
+            if(temp->data == value) {
+                check=true;
+                break;
+            }
+            temp=temp->next;
+        }
+        return check;
+    }
+
     // Display Operation
     void display(){
         if(isEmpty()){
@@ -96,5 +110,13 @@ int main(){
     cout<<"After popped stack data: ";
     stack.display();
     cout<<"New top stack element: "<<stack.peek()<<endl;
+    cout<<"Enter value for searching: ";
+    int value;
+    cin>>value;
+    if(stack.search(value)) {
+        cout<<"Yes,the value exist into stack.."<<endl;
+    }else {
+        cout<<"No,the value is not exist into stack.."<<endl;
+    }
     return 0;
 }
