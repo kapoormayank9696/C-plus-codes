@@ -1,45 +1,42 @@
-// Searching In Doubly Linked List Algorithm Implementation In C++
+// Searching In Singly Linked List Algorithm Implementation In C++
 #include<iostream>
 using namespace std;
 
-// Class for doubly linked list
-class DoublyLL {
+// Class for singly linked list
+class SinglyLL {
     // Public Access Modifier
     public:
-    // Node class of doubly linked list
+    // Node class of singly linked list
     class Node {
         // Public Access Modifier
         public:
         // Data Members
         int data;
         Node* next;
-        Node* prev;
         // Parameterized Constructor
         Node(int data) {
             this->data=data;
             this->next=nullptr;
-            this->prev=nullptr;
         }
     };
 
     Node* head=nullptr;
-    Node* tail=nullptr;
 
-    // Method to insert the nodes into doubly linked list
+    // Method to insert the nodes into singly linked list
     void insert(int data) {
         Node* newNode=new Node(data);
         if(head == nullptr) {
-            head=tail=newNode;
+            head=newNode;
             return;
         }
-        else {
-            tail->next=newNode;
-            newNode->prev=tail;
-            tail=newNode;
+        Node* temp=head;
+        while(temp->next != nullptr) {
+            temp=temp->next;
         }
+        temp->next=newNode;
     }
 
-    // Method of searching in doubly linked list
+    // Method of searching in singly linked list
     bool search(int value) {
         if(head == nullptr) {
             return false;
@@ -54,22 +51,22 @@ class DoublyLL {
         return false;
     }
 
-    // Method to display the doubly linked list
+    // Method to display the singly linked list
     void display() {
         if(head == nullptr) {
-            cout<<"Empty Doubly Linked List....."<<endl;
+            cout<<"Empty Singly Linked List....."<<endl;
             return;
         }
         Node* temp=head;
         while(temp != nullptr) {
-            cout<<temp->data<<" <--> ";
+            cout<<temp->data<<"--> ";
             temp=temp->next;
         }
         cout<<"END"<<endl;
     }
 
-    // Destructor for prevents to memory leaks,Correctly deletes doubly structure,Handles all cases safely
-    ~DoublyLL() {
+    // Destructor for prevents to memory leaks,Correctly deletes singly structure,Handles all cases safely
+    ~SinglyLL() {
         Node* temp = head;
         while(temp != nullptr) {
             Node* nextNode = temp->next;
@@ -80,7 +77,7 @@ class DoublyLL {
 };
 
 int main() {
-    DoublyLL list;
+    SinglyLL list;
     cout<<"Enter number of terms: ";
     int n,values;
     cin>>n;
@@ -89,14 +86,14 @@ int main() {
         cin>>values;
         list.insert(values);
     }
-    cout<<"Display the doubly linked list: ";
+    cout<<"Display the singly linked list: ";
     list.display();
     cout<<"Enter node for searching: ";
     cin>>values;
     if(list.search(values)) {
-        cout<<"Yes, the node exists in the doubly linked list."<<endl;
+        cout<<"Yes, the node exists in the singly linked list."<<endl;
     }else {
-        cout<<"No, the node does not exist in the doubly linked list."<<endl;
+        cout<<"No, the node does not exist in the singly linked list."<<endl;
     }
     return 0;
 }
