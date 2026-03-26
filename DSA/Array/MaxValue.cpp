@@ -25,7 +25,7 @@ void printArray(vector<int>& arr) {
 // Main function
 int main() {
     int n;
-    cout<<"Enter size of matrix: ";
+    cout<<"Enter size of an arrays: ";
     cin>>n;
     vector<int> arr(n);
     cout<<"Enter elements: "<<endl;
