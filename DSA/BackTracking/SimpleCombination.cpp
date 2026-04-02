@@ -1,31 +1,32 @@
-// Combination Array Generation using Backtracking Algorithm Implementation in C++
-#include <iostream>
-#include <vector>
+// Simple Combination Generation using Backtracking Algorithm Implementation in C++
+#include<iostream>
+#include<vector>
+#include<algorithm>
 using namespace std;
-
 // Function to generate combinations using backtracking
-void combine(vector<int>& nums, vector<vector<int>>& result, vector<int>& temp, int start) {
-    result.push_back(temp);
-    for(int i = start; i < nums.size(); i++) {
-        temp.push_back(nums[i]); // Include element
-        combine(nums, result, temp, i + 1); // Recursive call
+void combine(vector<vector<int>>& result, vector<int>& temp, int start,int n,int k){
+    if(temp.size() == k) {
+        result.push_back(temp);
+        return;
+    }
+    for(int i = start; i <= n; i++) {
+        temp.push_back(i); // Include element
+        combine(result, temp, i + 1, n, k); // Recursive call
         temp.pop_back(); // Backtrack (remove last element)
     }
 }
 
 // Main function
 int main() {
-    cout<<"Enter number of elements: ";
+    cout<<"Enter a number: ";
     int n;
     cin >> n;
-    vector<int> nums(n);
-    cout << "Enter elements: ";
-    for(int i = 0; i < n; i++) {
-        cin >> nums[i];
-    }
+    cout << "Enter number of times: ";
+    int k;
+    cin >> k;
     vector<vector<int>> result;
     vector<int> temp;
-    combine(nums, result, temp, 0);
+    combine(result, temp, 1,n,k);
     cout << "Combinations are:\n";
     for(auto combination : result) {
         cout << "[ ";
@@ -38,3 +39,4 @@ int main() {
     }
     return 0;
 }
+
