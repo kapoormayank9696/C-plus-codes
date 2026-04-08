@@ -86,6 +86,10 @@ This project provides simple, well-structured, and practical examples of both OO
    - Rat in a Maze  
    - Subsets / Power Set  
    - Permutations
+   - Permutations II
+   - Combination
+   - Combination Sum I
+   - Combination Sum II
 
 ⏱️ Time & Space Complexity (Basics)
 
