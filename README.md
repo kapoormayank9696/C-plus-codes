@@ -79,6 +79,14 @@ This project provides simple, well-structured, and practical examples of both OO
 
 🧠 Recursion
 
+🔙 Backtracking
+
+   - N-Queens Problem  
+   - Sudoku Solver  
+   - Rat in a Maze  
+   - Subsets / Power Set  
+   - Permutations
+
 ⏱️ Time & Space Complexity (Basics)
 
 ---
