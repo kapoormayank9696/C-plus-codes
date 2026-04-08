@@ -84,7 +84,9 @@ This project provides simple, well-structured, and practical examples of both OO
    - N-Queens Problem  
    - Sudoku Solver  
    - Rat in a Maze  
-   - Subsets / Power Set  
+   - Subsets
+   - Subsets II
+   - Power Set  
    - Permutations
    - Permutations II
    - Combination
