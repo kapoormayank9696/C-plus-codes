@@ -82,6 +82,7 @@ This project provides simple, well-structured, and practical examples of both OO
 🔙 Backtracking
 
    - N-Queens Problem  
+   - Simple Sudoku Solver  
    - Sudoku Solver  
    - Rat in a Maze  
    - Subsets
