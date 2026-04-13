@@ -225,8 +225,10 @@ int main() {
     }
     cout<<"Displaying Circular Linked List: ";
     circularLL.display();
-
+    cout<<endl;
+    
     // Insert Operations In Circular Linked List
+    cout<<"Inserting Operations In Circular Linked List"<<endl;
     cout<<"Enter The Data To Insert At Beginning Of Circular Linked List: ";
     int data;
     cin>>data;
@@ -249,6 +251,7 @@ int main() {
     cout<<endl;
 
     // Update Operations In Circular Linked List
+    cout<<"Updating Operations In Circular Linked List"<<endl;
     cout<<"Enter The Data To Update At Beginning Of Circular Linked List: ";
     cin>>data;
     circularLL.updateAtBeginning(data);
@@ -269,6 +272,7 @@ int main() {
     cout<<endl;
 
     // Delete Operations In Circular Linked List
+    cout<<"Deleting Operations In Circular Linked List"<<endl;
     circularLL.deleteAtBeginning();
     cout<<"Displaying Circular Linked List: ";
     circularLL.display();
