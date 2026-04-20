@@ -13,7 +13,11 @@ class Node {
         this->data = value;
         this->next = nullptr;
     }
+};
 
+// Singly Linked List class
+class SinglyLinkedList {
+    public:
     Node* head=nullptr;
 
     // Function to insert a new node at the end of the linked list
@@ -63,4 +67,17 @@ class Node {
     }
 };
 
-
+// Main function
+int main() {
+    SinglyLinkedList list;
+    cout<<"Enter the number of elements in the linked list: ";
+    int n;
+    cin>>n;
+    cout<<"Enter the elements of the linked list: ";
+    for(int i=0; i<n; i++){
+        int value;
+        cin>>value;
+        list.insert(value);
+    }
+    return 0;
+}
