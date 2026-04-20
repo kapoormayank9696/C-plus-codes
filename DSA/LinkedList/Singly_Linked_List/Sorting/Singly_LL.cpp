@@ -79,5 +79,10 @@ int main() {
         cin>>value;
         list.insert(value);
     }
+    cout<<"Linked List before sorting: ";
+    list.printList();
+    list.bubbleSort();
+    cout<<"Linked List after sorting: ";
+    list.printList();
     return 0;
 }
