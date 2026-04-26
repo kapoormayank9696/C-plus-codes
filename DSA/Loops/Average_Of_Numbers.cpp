@@ -16,7 +16,6 @@ int main(){
     cout<<"\nThe sum of the first "<<n<<" natural numbers is: "<<sum<<endl;
     double average = static_cast<double>(sum) / n; // Calculating the average
     cout<<"\nThe average of the first "<<n<<" natural numbers is: "<<average<<endl;
-    
     return 0;
 }
 
