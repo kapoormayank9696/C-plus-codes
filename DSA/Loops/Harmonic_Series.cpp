@@ -21,7 +21,6 @@ int main() {
     int n;
     cout << "Enter the value of n: ";
     cin >> n;
-    
     double result = harmonicSeries(n);
     cout << "The sum of the harmonic series up to " << n << " is: " << result << endl;
     return 0;
