@@ -7,7 +7,6 @@ int alternateSumSeries(int x, int n) {
     int sum = 0, ctr, k;
     for (int i = 1; i <= n; i++) {
         ctr = (2 * i - 1);
-
         if (i % 2 == 0) {
             k = (int)pow(x, ctr);
         } else {
