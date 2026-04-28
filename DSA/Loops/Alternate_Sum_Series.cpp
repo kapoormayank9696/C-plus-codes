@@ -3,6 +3,7 @@
 #include <cmath>
 using namespace std;
 
+// Function to calculate the alternate sum series
 int alternateSumSeries(int x, int n) {
     int sum = 0, ctr, k;
     for (int i = 1; i <= n; i++) {
