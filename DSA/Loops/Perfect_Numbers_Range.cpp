@@ -1,6 +1,7 @@
 // Perfect Numbers in a Range Algorithm Implementation In C++
 #include <iostream>
 using namespace std;
+
 // Function to check if a number is perfect
 bool isPerfect(int num) {
     int sum = 0;
