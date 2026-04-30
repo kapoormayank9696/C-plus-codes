@@ -38,7 +38,6 @@ int main() {
     cin >> lower;
     cout << "Input ending number of range: ";
     cin >> upper;
-
     cout << "Armstrong numbers between " << lower << " and " << upper << " are: ";
     for (int i = lower; i <= upper; i++) {
         if (isArmstrong(i)) {
