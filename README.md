@@ -37,6 +37,8 @@ This project provides simple, well-structured, and practical examples of both OO
 
 📊 Strings (Manipulation, Case Conversion, Reverse, Vowel Count)
 
+⚙️ Loop
+
 🔗 Linked List (Singly / Doubly)
 
 📚 Stack
@@ -95,6 +97,7 @@ This project provides simple, well-structured, and practical examples of both OO
    - Combination Sum II
 
 ⏱️ Time & Space Complexity (Basics)
+
 
 ---
 LeetCode Problems Solution In C++
