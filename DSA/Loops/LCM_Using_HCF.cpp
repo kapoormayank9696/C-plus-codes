@@ -1,4 +1,4 @@
-// LCM Algorithm Implementation In C++
+// LCM Using HCF Algorithm Implementation In C++
 #include<iostream>
 using namespace std;
 // Function to find the LCM from two numbers
