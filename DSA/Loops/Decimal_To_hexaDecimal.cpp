@@ -9,8 +9,7 @@ void decimalToHexa(int n) {
         '4','5','6','7',
         '8','9','A','B',
         'C','D','E','F'
-    };
-    
+    };    
     if(n == 0) {
         cout << "The equivalent Hexadecimal Number : 0";
         return;
