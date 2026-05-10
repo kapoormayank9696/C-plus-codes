@@ -22,6 +22,7 @@ class Solution {
         "wxyz"  // 9
     };
 
+    // Function to solve the combination of phone numbers
     void solve(string digits, int index, string temp) {
 
         if(index == digits.length()) {
@@ -36,6 +37,7 @@ class Solution {
         }
     }
 
+    // Function to generate combination of phone numbers
     vector<string> letterCombinations(string digits) {
 
         if(digits.length() == 0) {
