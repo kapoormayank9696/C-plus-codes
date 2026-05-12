@@ -27,6 +27,7 @@ class BinaryTree {
     map<int, int> inOrderMap;
     int index=-1;
     int preorderIndex=0;;
+    // Function to build the binary tree
     TreeNode* buildTree(int nodes[]) {
         index++;
         if(nodes[index] == -1) {
@@ -89,5 +90,4 @@ int main() {
     Preorder(newRoot);
     return 0;
 }
-
 
