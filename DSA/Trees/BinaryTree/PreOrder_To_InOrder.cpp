@@ -26,7 +26,9 @@ class BinaryTree {
     public:
     map<int, int> inOrderMap;
     int index=-1;
-    int preorderIndex=0;;
+    int preorderIndex=0;
+    
+    // Function to build the binary tree from the given array
     TreeNode* buildTree(int nodes[]) {
         index++;
         if(nodes[index] == -1) {
