@@ -46,36 +46,41 @@ void print(Node* root){
 
 // Function to min value from BST
 int minValue(Node* root) {
-    int minv=root->data;
     while(root->left != nullptr) {
-        minv=root->left->data;
         root=root->left;
     }
-    return minv;
+    return root->data;
 }
 
 // Function to delete the target node from BSt
 Node* deleteNode(Node* root,int target) {
+
     if(root == nullptr) {
         return nullptr;
     }
+
     // Recursive calls for left and right subtrees
     if(root->data > target) {
         // Left Subtree
         root->left = deleteNode(root->left,target); 
-    }else if(root->data < target) {
+    }
+    
+    else if(root->data < target) {
         // Right Subtree
         root->right = deleteNode(root->right,target); 
-    }else {
+    }
+    
+    else {
         if(root->left == nullptr) {
             return root->right;
         }else if(root->right == nullptr) {
             return root->left;
         }
         // Node with two children: Get the inorder successor (smallest in the right subtree)
-        root->data = minValue(root->right);
+        int min = minValue(root->right);
+        root->data = min; // Copy the inorder successor's content to this node
         // Delete the inorder successor
-        root->right = deleteNode(root->right, root->data);
+        root->right = deleteNode(root->right, min);
     }
     return root;
 }
