@@ -1,13 +1,16 @@
 // LeetCode Problem 450: Delete Node in a BST
 #include<iostream>
 using namespace std;
+
 // Node class of Binary Search Tree(BST)
 class Node {
+
     // Public Access Modifier
     public:
     int data;
     Node* left;
     Node* right;
+
     // Parameterized Constructor
     Node(int data) {
         this->data=data;
@@ -18,14 +21,17 @@ class Node {
 
 // Function to insert the nodes in BST
 Node* insert(Node* root, int val) {
+
     if(root == nullptr) {
         return new Node(val);
     }
+
     // Recursive Function
     if(root->data > val){
         // Left Subtree
         root->left=insert(root->left,val); 
     }
+
     else if(root->data < val){
         // Right Subtree
         root->right=insert(root->right,val); 
@@ -38,6 +44,7 @@ void print(Node* root){
     if(root == nullptr) {
         return;
     }
+
     cout<<root->data<<" ";
     // Recursive Function
     print(root->left); // Left Subtree
@@ -76,6 +83,7 @@ Node* deleteNode(Node* root,int target) {
         }else if(root->right == nullptr) {
             return root->left;
         }
+
         // Node with two children: Get the inorder successor (smallest in the right subtree)
         int min = minValue(root->right);
         root->data = min; // Copy the inorder successor's content to this node
@@ -87,11 +95,13 @@ Node* deleteNode(Node* root,int target) {
 
 // Main function
 int main() {
+
     int nums[]={50,30,80,25,20,70,75,110,100,90,65};
     Node* root=nullptr;
     for(int num:nums) {
         root=insert(root,num);
     }
+    
     cout<<"Print all nodes of BST: ";
     print(root);
     int target=65;
