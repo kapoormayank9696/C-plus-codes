@@ -1,40 +1,43 @@
 // LeetCode Problem 110: Balanced Binary Tree
 
+// Balanced Binary Tree Check Algorithm Implementation In C++
 #include <iostream>
 #include <cmath>
 using namespace std;
 
-// Node class of Binary Tree
+// Node class
 class Node {
 public:
     int data;
     Node* left;
     Node* right;
 
-    // Constructor
     Node(int data) {
         this->data = data;
-        this->left = nullptr;
-        this->right = nullptr;
+        left = right = nullptr;
     }
 };
 
-// Function to insert nodes in BST
-Node* insert(Node* root, int val) {
+// Binary Tree class
+class BinaryTree {
+public:
 
-    if (root == nullptr) {
-        return new Node(val);
-    }
+    Node* insert(Node* root, int data) {
 
-    if (val < root->data) {
-        root->left = insert(root->left, val);
-    }
-    else if (val > root->data) {
-        root->right = insert(root->right, val);
-    }
+        if (root == nullptr) {
+            return new Node(data);
+        }
 
-    return root;
-}
+        if (data < root->data) {
+            root->left = insert(root->left, data);
+        }
+        else {
+            root->right = insert(root->right, data);
+        }
+
+        return root;
+    }
+};
 
 // Preorder traversal
 void print(Node* root) {
@@ -49,7 +52,7 @@ void print(Node* root) {
     print(root->right);
 }
 
-// Function to calculate height
+// Height checking
 int checkHeight(Node* root) {
 
     if (root == nullptr) {
@@ -68,30 +71,29 @@ int checkHeight(Node* root) {
         return -1;
     }
 
-    // Check balance condition
     if (abs(leftHeight - rightHeight) > 1) {
         return -1;
     }
 
-    // Return height
     return 1 + max(leftHeight, rightHeight);
 }
 
-// Function to check if tree is balanced
+// Balanced tree check
 bool isBalanced(Node* root) {
     return checkHeight(root) != -1;
 }
 
-// Main function
+// Main
 int main() {
 
-    // int nums[] = {9, 3, 20, 15, 7};
-    int nums[] = {1,2,2,3,3,-1,-1,4,4};
+    int nums[] = {9, 3, 20, 15, 7};
 
     Node* root = nullptr;
 
+    BinaryTree tree;
+
     for (int num : nums) {
-        root = insert(root, num);
+        root = tree.insert(root, num);
     }
 
     cout << "Preorder Traversal: ";
