@@ -4,6 +4,7 @@
 #include <vector>
 using namespace std;
 
+// Class to find the minimum common value between two sorted arrays
 class Solution {
     public:
     
