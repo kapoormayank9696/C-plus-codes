@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+
 // Function to find the longest common prefix among an array of strings
 string longestCommonPrefix(vector<string>& strs) {
     if (strs.empty()) return "";
