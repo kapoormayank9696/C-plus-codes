@@ -1,6 +1,7 @@
 // LeetCode Problem 101: Symmetric Tree
 #include <iostream>
 using namespace std;
+
 // class of Binary Search Tree
 class TreeNode {
     public :
