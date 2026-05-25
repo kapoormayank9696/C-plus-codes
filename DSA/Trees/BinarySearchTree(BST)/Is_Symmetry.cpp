@@ -26,6 +26,7 @@ TreeNode* insertNode(int arr[],int n,int i) {
     if (i >= n) {
         return NULL;
     }
+    
     // Create node (Recursive Method)
     TreeNode* root = new TreeNode(arr[i]);
     // Left subtree
