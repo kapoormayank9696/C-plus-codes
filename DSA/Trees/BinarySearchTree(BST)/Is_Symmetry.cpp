@@ -21,20 +21,17 @@ class TreeNode {
 };
 
 
-// Function to insert the node in binary tree
-TreeNode* insertNode(TreeNode* root, int val) {
-    if (root == nullptr) {
-        return new TreeNode(val);
+// Function to insert the node in binary search tree
+TreeNode* insertNode(int arr[],int n,int i) {
+    if (i >= n) {
+        return NULL;
     }
-
+    // Create node (Recursive Method)
+    TreeNode* root = new TreeNode(arr[i]);
     // Left subtree
-    if (val < root->data) {
-        root->left = insertNode(root->left, val);
-    } 
+    root->left=insertNode(arr,n,2*i+1);
     // Right subtree
-    else {
-        root->right = insertNode(root->right, val);
-    }
+    root->right=insertNode(arr,n,2*i+2);
     return root;
 }
 
@@ -73,10 +70,7 @@ bool isSymmetric(TreeNode* root) {
 int main() {
     int arr[] = {1, 2, 2, 3, 4, 4, 3};
     int n = sizeof(arr) / sizeof(arr[0]);
-    TreeNode* root = nullptr;
-    for (int i = 0; i < n; i++) {
-        root = insertNode(root, arr[i]);
-    }
+    TreeNode* root = insertNode(arr,n,0);
     cout << "Binary Search Tree: ";
     printTree(root);
     cout << endl;
