@@ -172,7 +172,7 @@ Learn how to structure C++ projects
 Mayank Kapoor
 📧 Email: kapoormayank645@gmail.com
 
-🌐 GitHub: https://github.com/kapoormayank
+🌐 GitHub: https://github.com/kapoormayank9696
 
 ---
 
