@@ -240,16 +240,41 @@ Learn how to structure C++ projects
 
 ---
 
-👤 Author
+## 🔥 Future Improvements
+- Add STL Examples
+- Add Dynamic Programming
+- Add Advanced Graph Algorithms
+- Add Competitive Programming Problems
+- Add Mini C++ Projects
+- Improve Documentation
+- Add More LeetCode Solutions
 
-Mayank Kapoor
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+If you would like to contribute:
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Push the branch
+5. Open a Pull Request
+
+---
+
+## 👤 Author
+
+## Mayank Kapoor
 📧 Email: kapoormayank645@gmail.com
 
 🌐 GitHub: https://github.com/kapoormayank9696
 
 ---
 
-⭐ Support
+## ⭐ Support
 
 If you find this project helpful:
 
@@ -258,7 +283,6 @@ If you find this project helpful:
 🍴 Fork it
 
 🧠 Use it for learning and practice
-Happy Coding! 🚀
 
 ---
 
@@ -271,3 +295,9 @@ If you want, I can:
 - Review your repo like a **mentor**
 
 Just tell me what you want next 😊
+
+---
+
+## 🚀 Happy Coding!
+
+---
