@@ -220,10 +220,12 @@ Object-Oriented_Programming/
 -  Polymorphism.cpp
 ---
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 C++
+
 Git & GitHub
+
 Visual Studio Code
 
 ---
