@@ -93,6 +93,7 @@ This repository contains practical implementations of:
 
 - Singly Linked List
 - Doubly Linked List
+- Circular Linked List
 
 ---
 
