@@ -63,6 +63,9 @@ This repository contains practical implementations of:
 - Insert at Beginning
 - Insert at End
 - Insert at Specific Position
+- Missing Number
+- Find Minimum in Rotated Sorted Array II
+- Check if Array Is Sorted and Rotated
 
 ---
 
