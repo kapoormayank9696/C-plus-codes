@@ -75,6 +75,8 @@ This repository contains practical implementations of:
 - Case Conversion
 - Reverse String
 - Vowel Count
+- Valid Paranthesis
+- Anagram
 
 ---
 
