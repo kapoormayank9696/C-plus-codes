@@ -13,15 +13,18 @@ void printArray(const vector<int>& nums) {
 
 // Main Function
 int main() {
-    cout<<"Enter matrix size: ";
+
+    cout<<"Enter array size: ";
     int n;
     cin>>n;
+
     // Define the vector means dynamic array
     vector<int> arr(n);
-    cout<<"Enter matrix elements row by row: ";
+    cout<<"Enter array elements: ";
     for(int i=0;i<n;i++) {
         cin>>arr[i];
     }
+
     cout<<"Print Original 1-d Array: ";
     printArray(arr);
     return 0;
