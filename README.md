@@ -36,7 +36,7 @@ This repository contains practical implementations of:
 
 ## 🚀 Features
 
-## ✅ OOP Concepts Covered
+# ✅ OOP Concepts Covered
 
 - 🧱 Classes and Objects  
 - 🔐 Access Modifiers  
@@ -52,7 +52,7 @@ This repository contains practical implementations of:
 
 ---
 
-## ✅ DSA Concepts Covered
+# ✅ DSA Concepts Covered
 
 ## 📌 Arrays
 
@@ -184,7 +184,7 @@ This repository also contains solutions to various LeetCode problems implemented
 
 ---
 
-## 📁 Folder Structure
+# 📁 Folder Structure
 Object-Oriented_Programming/
 -  Abstraction/
    - ├── Interface_Abstraction.cpp
@@ -226,7 +226,7 @@ Object-Oriented_Programming/
 -  Polymorphism.cpp
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Technologies Used
 
 C++
 
