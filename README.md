@@ -238,7 +238,7 @@ Visual Studio Code
 
 ---
 
-## 🎯 Learning Outcome
+# 🎯 Learning Outcome
 
 By exploring this repository, you will:
 
@@ -251,7 +251,7 @@ By exploring this repository, you will:
 
 ---
 
-## 🌟 Why This Repository?
+# 🌟 Why This Repository?
 
 ✔️ Beginner Friendly
 
@@ -267,7 +267,7 @@ By exploring this repository, you will:
 
 ---
 
-## 🔥 Future Improvements
+# 🔥 Future Improvements
 - Add STL Examples
 - Add Dynamic Programming
 - Add Advanced Graph Algorithms
@@ -278,7 +278,7 @@ By exploring this repository, you will:
 
 ---
 
-## 🤝 Contributing
+# 🤝 Contributing
 
 Contributions are welcome!
 
@@ -292,7 +292,7 @@ If you would like to contribute:
 
 ---
 
-## 👤 Author
+# 👤 Author
 
 ## Mayank Kapoor
 📧 Email: kapoormayank645@gmail.com
@@ -301,7 +301,7 @@ If you would like to contribute:
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
 If you find this project helpful:
 
@@ -313,7 +313,7 @@ If you find this project helpful:
 
 ---
 
-## 🔥 Next Improvements (Optional)
+# 🔥 Next Improvements (Optional)
 If you want, I can:
 - Add **badges** (C++, GitHub stars, license)
 - Make it **more professional**
@@ -325,6 +325,6 @@ Just tell me what you want next 😊
 
 ---
 
-## 🚀 Happy Coding!
+# 🚀 Happy Coding!
 
 ---
