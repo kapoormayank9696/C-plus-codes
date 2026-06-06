@@ -6,7 +6,7 @@ This repository is designed for beginners, students, and intermediate learners w
 
 ---
 
-## 📖 About the Project
+# 📖 About the Project
 
 # 🔹 Object-Oriented Programming (OOP)
 
