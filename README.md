@@ -34,7 +34,7 @@ This repository contains practical implementations of:
 
 ---
 
-## 🚀 Features
+# 🚀 Features
 
 # ✅ OOP Concepts Covered
 
