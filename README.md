@@ -6,7 +6,7 @@ This repository is designed for beginners, students, and intermediate learners w
 
 ---
 
-## 📖 About the Project
+# 📖 About the Project
 
 # 🔹 Object-Oriented Programming (OOP)
 
@@ -34,7 +34,7 @@ This repository contains practical implementations of:
 
 ---
 
-## 🚀 Features
+# 🚀 Features
 
 # ✅ OOP Concepts Covered
 
@@ -174,7 +174,7 @@ This repository contains practical implementations of:
 - Optimization Techniques
 
 ---
-## 🧪 LeetCode Solutions in C++
+# 🧪 LeetCode Solutions in C++
 
 This repository also contains solutions to various LeetCode problems implemented in C++ to improve:
 
