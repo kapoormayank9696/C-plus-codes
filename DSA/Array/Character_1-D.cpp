@@ -1,4 +1,5 @@
 // Character 1-D Array Algorithm Implementation In C++
+
 #include<iostream>
 #include<vector>
 using namespace std;
