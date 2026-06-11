@@ -35,25 +35,25 @@ class TreeNode {
 ListNode* findMiddle(ListNode* head) {
     ListNode* slow = head;
     ListNode* fast = head;
-    ListNode* prev = NULL;
+    ListNode* prev = nullptr;
 
     // Fast and slow pointer Method to find the middle node of the linked list
-    while(fast != NULL && fast->next != NULL) {
+    while(fast != nullptr && fast->next != nullptr) {
         prev = slow;
         slow = slow->next;
         fast = fast->next->next;
     }
 
-    if(prev != NULL) {
-        prev->next = NULL; // Split the linked list into two halves
+    if(prev != nullptr) {
+        prev->next = nullptr; // Split the linked list into two halves
     }
     return slow; // Return the middle node
 }
 
 // Function to convert sorted linked list to binary search tree
 TreeNode* sortedListToBST(ListNode* head) {
-    if(head == NULL) {
-        return NULL; // Base case: if the linked list is empty, return NULL
+    if(head == nullptr) {
+        return nullptr; // Base case: if the linked list is empty, return nullptr
     }
     ListNode* mid = findMiddle(head); // Find the middle node of the linked list
     
@@ -70,7 +70,7 @@ TreeNode* sortedListToBST(ListNode* head) {
 
 // Function to print the binary search tree(for testing purposes)
 void Traversal(TreeNode* root) {
-    if(root == NULL) {
+    if(root == nullptr) {
         return;
     }
     cout << root->val << " "; // Print the current node's value
@@ -81,11 +81,11 @@ void Traversal(TreeNode* root) {
 // Main function
 int main() {
     vector<int> sortedList = {-10, -3, 0, 5, 9}; // Example sorted linked list
-    ListNode* head = NULL;
-    ListNode* current = NULL;
+    ListNode* head = nullptr;
+    ListNode* current = nullptr;
     // Create the linked list from the sorted array
     for(int num : sortedList) {
-        if(head == NULL) {
+        if(head == nullptr) {
             head = new ListNode(num);
             current = head;
         } else {
