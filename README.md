@@ -322,7 +322,6 @@ If you want, I can:
 - Help you write **commit messages**
 - Review your repo like a **mentor**
 
-Just tell me what you want next 😊
 
 ---
 
