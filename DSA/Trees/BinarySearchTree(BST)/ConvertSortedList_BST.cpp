@@ -53,9 +53,12 @@ ListNode* findMiddle(ListNode* head) {
 // Function to convert sorted linked list to binary search tree
 TreeNode* sortedListToBST(ListNode* head) {
     if(head == nullptr) {
-        return nullptr; // Base case: if the linked list is empty, return nullptr
+        return nullptr;
     }
-    ListNode* mid = findMiddle(head); // Find the middle node of the linked list
+    if(head->next == nullptr) {
+        return new TreeNode(head->val);
+    }
+    ListNode* mid = findMiddle(head);
     
     // Create a new tree node
     TreeNode* root = new TreeNode(mid->val); 
@@ -65,17 +68,16 @@ TreeNode* sortedListToBST(ListNode* head) {
     // Recursively build the right
     root->right = sortedListToBST(mid->next);
 
-    return root; // Return the root of the BST
+    return root;
 }
 
 // Function to print the binary search tree(for testing purposes)
 void Traversal(TreeNode* root) {
-    if(root == nullptr) {
-        return;
-    }
-    cout << root->val << " "; // Print the current node's value
-    Traversal(root->left); // Traverse the left subtree
-    Traversal(root->right); // Traverse the right subtree
+    if(root == nullptr) return;
+
+    Traversal(root->left);
+    cout << root->val << " ";
+    Traversal(root->right);
 }
 
 // Main function
@@ -98,4 +100,5 @@ int main() {
     Traversal(bstRoot); // Print the in-order traversal of the BST
     return 0;
 }
+
 
