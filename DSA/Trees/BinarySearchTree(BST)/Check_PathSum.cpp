@@ -69,6 +69,7 @@ class BinarySearchTree {
 // Main function
 int main() {
     BinarySearchTree bst;
+    
     TreeNode* root = nullptr;
 
     vector<int> nodes = {5, 4, 11, 7, 2, 8, 13, 4, 1};
