@@ -28,6 +28,8 @@ class TreeNode {
         this->right = nullptr;
     }
 };
+
+// Class Binary Search Tree
 class BinarySearchTree {
     public:
     // Function to Build the Binary Search Tree
