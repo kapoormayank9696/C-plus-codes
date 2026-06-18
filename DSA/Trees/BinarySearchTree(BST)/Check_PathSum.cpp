@@ -21,6 +21,7 @@ class TreeNode {
     int value;
     TreeNode* left;
     TreeNode* right;
+
     // Parameterized Constructor
     TreeNode(int value) {
         this->value = value;
@@ -32,6 +33,7 @@ class TreeNode {
 // Class Binary Search Tree
 class BinarySearchTree {
     public:
+    
     // Function to Build the Binary Search Tree
     TreeNode* buildBST(TreeNode* root, int data) {
         if(root == nullptr) {
