@@ -1,7 +1,6 @@
 // Leetode Problem 701: Insert into a Binary Search Tree
 // Time Complexity: O(n)
 // Space Complexity: O(h)
-
 #include<iostream>
 using namespace std;
 
