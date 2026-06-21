@@ -21,14 +21,17 @@ class TreeNode {
 
 // Function to insert a nodes of BST
 TreeNode* insert(TreeNode* root,int val) {
+    
     if(root == nullptr) {
         return new TreeNode(val);
     }
+
     // Recursive Function
     if(root->val > val) {
         // Left Subtree
         root->left=insert(root->left,val);
     }
+
     if(root->val < val) {
         // Right Subtree
         root->right=insert(root->right,val);
@@ -54,7 +57,7 @@ int main() {
     for(int num:values) {
         root=insert(root,num);
     }
-    
+
     cout<<"In-Order Traversal: ";
     inOrder(root);
     return 0;
