@@ -54,6 +54,7 @@ int main() {
     for(int num:values) {
         root=insert(root,num);
     }
+    
     cout<<"In-Order Traversal: ";
     inOrder(root);
     return 0;
