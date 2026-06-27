@@ -114,13 +114,13 @@ int main() {
         sol.insert(x);
     }
 
-    cout << "Original Linked List:\n";
+    cout << "\nOriginal Linked List:";
     sol.display();
 
     // Modify Linked List
     sol.head = sol.modifiedList(nums, sol.head);
 
-    cout << "\nAfter Deleting Nodes:\n";
+    cout << "After Deleting Nodes:";
     sol.display();
 
     return 0;
