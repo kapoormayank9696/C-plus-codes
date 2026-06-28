@@ -8,10 +8,13 @@ using namespace std;
 
 // Node class
 class ListNode {
-public:
+    public:
+    
+    // Data Members
     int val;
     ListNode* next;
 
+    // Parameterized Constructor
     ListNode(int val) {
         this->val = val;
         this->next = nullptr;
@@ -20,7 +23,7 @@ public:
 
 // Solution class
 class Solution {
-public:
+    public:
     ListNode* head = nullptr;
 
     // Insert at end
@@ -102,6 +105,7 @@ public:
     }
 };
 
+// Main function
 int main() {
 
     Solution sol;
