@@ -37,7 +37,7 @@ class MyHashMap {
 
 // Main function
 int main() {
-    // Create Object 
+    // Create Object Of MyHashMap Class
     MyHashMap hashMap;
 
     int nums[] = {1, 1, 2, 2, 1, 3, 2, 1, 2, 2, 2};
