@@ -49,7 +49,7 @@ class Solution {
         return prev;
     }
 
-    // Remove a node from the linked list
+    // Remove Node Operation
     ListNode* removeNode(ListNode* head) {
         if (head == nullptr) return nullptr;
 
