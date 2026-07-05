@@ -17,6 +17,7 @@ class ListNode {
 
 // Skiplist class to implement the remove node operation
 class Skiplist {
+    
     // Public Access Modifier
     public:
 
