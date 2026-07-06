@@ -19,8 +19,10 @@ class ListNode {
 
 // Solution class to implement the double number operation
 class Solution {
+    
     // Public Access Modifier
     public:
+    
     // Insert Operation
     void insertNode(ListNode** head, int value) {
         ListNode* newNode = new ListNode(value);
