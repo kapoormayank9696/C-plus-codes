@@ -52,7 +52,7 @@ This repository contains practical implementations of:
 
 ---
 
-# ✅ DSA Concepts Covered
+# ✅ DSA Concepts Covered [![DSA](https://img.shields.io/badge/DSA-Data%20Structures%20%26%20Algorithms-blueviolet?style=flat)](https://en.wikipedia.org/wiki/Data_structure)
 
 
 ## 📌 Arrays
@@ -151,7 +151,6 @@ This repository contains practical implementations of:
 - Fibonacci Series
 
 ---
-
 ## 🔙 Backtracking Problems
 - N-Queens Problem
 - Simple Sudoku Solver
@@ -175,6 +174,7 @@ This repository contains practical implementations of:
 - Optimization Techniques
 
 ---
+
 # 🧪 LeetCode Solutions in C++
 
 This repository also contains solutions to various LeetCode problems implemented in C++ to improve:
