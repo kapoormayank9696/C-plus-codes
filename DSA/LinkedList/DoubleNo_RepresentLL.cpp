@@ -4,6 +4,7 @@ using namespace std;
 
 // Node class of Doubly Linked List
 class ListNode {
+    // Public Access Specifier
     public:
     int val;
     ListNode* next;
