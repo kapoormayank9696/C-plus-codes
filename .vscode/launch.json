@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/c++ oops/DSA/Array",
-      "program": "d:/c++ oops/DSA/Array/build/Debug/outDebug",
+      "cwd": "d:/c++ oops/DSA/Trees/BinarySearchTree(BST)",
+      "program": "d:/c++ oops/DSA/Trees/BinarySearchTree(BST)/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
