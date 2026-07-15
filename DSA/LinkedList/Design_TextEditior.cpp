@@ -91,7 +91,8 @@ class TextEditor {
         return getLast10();
     }
 
-private:
+    // Get Last 10
+    private:
     string getLast10() {
         string ans = "";
 
