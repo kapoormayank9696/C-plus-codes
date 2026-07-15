@@ -20,17 +20,19 @@ public:
 
 // Class to implement the Text Editor with cursor movement and text manipulation
 class TextEditor {
-public:
+    // Default Members And Public Access Specifier
+    
+    public:
     ListNode* head;
     ListNode* cursor;
 
-    // Constructor to initialize the Text Editor with a dummy head node
+    // Parameterized Constructor
     TextEditor() {
         head = new ListNode('#');
         cursor = head;
     }
 
-    // Add text at the current cursor position
+    // Add Operation
     void addText(string text) {
         for (char c : text) {
             ListNode* node = new ListNode(c);
@@ -47,7 +49,7 @@ public:
         }
     }
 
-    // Delete k characters to the left of the cursor and return the number of characters deleted
+    // Delete Operation
     int deleteText(int k) {
         int deleted = 0;
 
@@ -69,7 +71,7 @@ public:
         return deleted;
     }
 
-    // Move the cursor k positions to the left and return the last 10 characters to the left of the cursor
+    // Left Cursor Operation
     string cursorLeft(int k) {
         while (cursor != head && k > 0) {
             cursor = cursor->prev;
@@ -79,6 +81,7 @@ public:
         return getLast10();
     }
 
+    // Right Cursor Operation
     string cursorRight(int k) {
         while (cursor->next != nullptr && k > 0) {
             cursor = cursor->next;
