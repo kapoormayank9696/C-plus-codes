@@ -15,6 +15,8 @@ It helps developers write reusable, scalable, and organized code.
 
 This repository demonstrates the core concepts of OOP in C++ using simple examples and clean code.
 
+---
+
 # 🔹 Data Structures & Algorithms (DSA)
 
 Data Structures & Algorithms help developers build efficient and optimized solutions by understanding how data is stored, accessed, and processed.
