@@ -59,6 +59,14 @@ public:
             }
         }
 
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (grid[i][j] == 1 && !visited[i][j]) {
+                    return -1; // If there are still fresh oranges left, return -1
+                }
+            }
+        }
+
         return ans;
     }
 };
@@ -69,7 +77,7 @@ int main() {
     vector<vector<int>> grid = {
         {2, 1, 1},
         {1, 1, 0},
-        {4, 1, 1}};
+        {0, 1, 1}};
 
     // Create a Graph object
     Graph g;
