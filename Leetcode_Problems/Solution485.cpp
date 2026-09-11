@@ -20,6 +20,7 @@ class Solution {
     }
 };
 
+// Main function
 int main() {
     Solution solution;
     vector<int> nums = {1,1,0,1,1,1,0,1,1};
