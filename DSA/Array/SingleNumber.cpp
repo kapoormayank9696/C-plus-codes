@@ -8,8 +8,7 @@ int main() {
     vector<int> nums = {4, 1, 2, 1, 2};
     int result = 0;
 
-    for (int num : nums)
-    {
+    for (int num : nums) {
         result = result ^ num; // XOR operation
     }
 
