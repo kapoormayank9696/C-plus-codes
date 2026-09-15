@@ -9,6 +9,8 @@ class Graph {
 
     // Public Specifier
     public: 
+
+    // Function to calculate the time taken for all oranges to rotten
     int organesRotting(vector<vector<int>>& grid) {
         int rows = grid.size();
         int cols = grid[0].size();
