@@ -35,6 +35,7 @@ class Graph {
 
         // BFS traversal to rot the oranges
         while(queue.size() > 0) {
+
             int i = queue.front().first.first;
             int j = queue.front().first.second;
             int time = queue.front().second;
@@ -61,6 +62,7 @@ class Graph {
                 queue.push({{i, j+1}, time+1});
                 visited[i][j+1] = true;
             }
+            
         }
         
         for(int i=0; i<rows; i++) {
@@ -81,7 +83,7 @@ int main() {
     vector<vector<int>> grid = {
         {2, 1, 1},
         {1, 1, 0},
-        {4, 1, 1}
+        {0, 1, 1}
     };
 
     // Create a Graph object
