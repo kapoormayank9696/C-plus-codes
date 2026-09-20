@@ -1,9 +1,15 @@
+// LeetCode Problem 455: Assign Cookies
 #include <iostream>
 #include <vector>
 using namespace std;
 
+// Solution class for finding the maximum number of content children
 class Solution {
+
+    // Public Specifier
     public:
+
+    // Function to perform quicksort on the array
     void quickSort(vector<int> &nums, int low, int high) {
         if (low < high) {
             int pi = partition(nums, low, high);
@@ -13,6 +19,7 @@ class Solution {
         }
     }
 
+    // Function to partition the array for quicksort
     int partition(vector<int> &nums, int low, int high) {
         int pivort = nums[high];
         int i = low - 1;
@@ -36,6 +43,7 @@ class Solution {
         return i;
     }
 
+    // Function to find the maximum number of content children
     int findContentChildren(vector<int> &g, vector<int> &s) {
 
         quickSort(g, 0, g.size() - 1);
@@ -57,6 +65,7 @@ class Solution {
     }
 };
 
+// Main function
 int main() {
 
     Solution solution;
