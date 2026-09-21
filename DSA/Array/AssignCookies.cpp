@@ -7,7 +7,8 @@ using namespace std;
 class Solution {
 
     // Public Specifier
-public:
+    public:
+    
     // Function to perform quicksort on the array
     void quickSort(vector<int> &nums, int low, int high) {
         if (low < high)
