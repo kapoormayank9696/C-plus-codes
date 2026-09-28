@@ -5,6 +5,7 @@ using namespace std;
 
 // Class for Binary Search Tree Node
 class BSTNode {
+
     // Public Specifier
     public:
 
@@ -23,8 +24,10 @@ class BSTNode {
 
 // Class for Binary Search Tree Iterator
 class BSTIterator {
-    
+
+    // Public Specifier
     public:
+    
     // Stack to store the nodes of the BST
     stack<BSTNode *> st;
 
