@@ -93,6 +93,13 @@ int main() {
     
     int target = 2;
 
-    cout << "Search in Binary Search Tree: " << solution.searchBST(root,target) << endl;
+    TreeNode *result = solution.searchBST(root, target);
+
+    if (result != nullptr) {
+        cout << "Search in Binary Search Tree: " << result->val << endl;
+    } else {
+        cout << "Value not found in BST." << endl;
+    }
+
     return 0;
 }
