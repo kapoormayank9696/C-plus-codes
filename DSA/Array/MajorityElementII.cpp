@@ -1,8 +1,10 @@
+// Majority Element II Algorithm Implementation In C++
 #include<iostream>
 #include<vector>
 #include<algorithm>
 using namespace std;
 
+// Function to find the majority elements in an array that appear more than n/3 times
 vector<int> majorityElement(int nums[],int n) {
     
     // Sort array
@@ -23,6 +25,7 @@ vector<int> majorityElement(int nums[],int n) {
             count = 1;
         }
     }
+    
     if(count > n/3) {
         ans.push_back(nums[n-1]);
     }
@@ -30,10 +33,12 @@ vector<int> majorityElement(int nums[],int n) {
     return ans;
 }
 
+// Main function
 int main() {
     int nums[] = {3, 2, 3};
     int n = sizeof(nums)/sizeof(nums[0]);
     vector<int> result = majorityElement(nums, n);
+
     cout << "Majority elements(appearing more than n/3 times): ";
     for(int i : result) {
         cout << i << " ";
