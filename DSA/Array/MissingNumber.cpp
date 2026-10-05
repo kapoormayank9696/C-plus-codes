@@ -1,0 +1,18 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int missingNumber(int nums[], int n) {
+    int xorValue = n; // Initialize xorValue with n
+    for (int i = 0; i < n; i++) {
+        xorValue = xorValue ^ i ^ nums[i];
+    }
+    return xorValue;
+}
+
+int main() {
+    int nums[] = {3, 0, 1};
+    int n = sizeof(nums)/sizeof(nums[0]);
+    cout << "Missing number is: " << missingNumber(nums, n) << endl;
+    return 0;
+}
