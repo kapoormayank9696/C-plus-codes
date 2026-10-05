@@ -5,7 +5,8 @@ using namespace std;
 
 // Function to find the missing number in an array
 int missingNumber(int nums[], int n) {
-    int xorValue = n; // Initialize xorValue with n
+    // Initialize xorValue with n
+    int xorValue = n;
     for (int i = 0; i < n; i++) {
         xorValue = xorValue ^ i ^ nums[i];
     }
