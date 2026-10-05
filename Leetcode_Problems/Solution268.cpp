@@ -1,4 +1,4 @@
-// Missing Number in an array Algorithm Implementation In C++
+// LeetCode Problem 268: Missing Number
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -14,7 +14,7 @@ int missingNumber(int nums[], int n) {
 // Main function
 int main() {
     int nums[] = {3, 0, 1};
-    int n = sizeof(nums)/sizeof(nums[0]);
+    int n = sizeof(nums) / sizeof(nums[0]);
     cout << "Missing number is: " << missingNumber(nums, n) << endl;
     return 0;
 }
