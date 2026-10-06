@@ -11,8 +11,12 @@ class Solution {
     
     // Function to calculate the score of parentheses
     int scoreOfParentheses(string s) {
+
+        // Create a stack to keep track of the scores
         stack<int> st;
         st.push(0);
+
+        // Iterate through the string and calculate the score based on the rules
         for (int i = 0; i < s.length(); i++) {
             if (s[i] == '(') {
                 st.push(0);
