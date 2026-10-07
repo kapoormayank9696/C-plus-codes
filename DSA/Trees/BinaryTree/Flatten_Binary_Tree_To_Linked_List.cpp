@@ -1,5 +1,4 @@
 // Flatten Binary Tree to Linked List Algorithm Implementation In C++
-// Flatten Binary Tree to Linked List Algorithm Implementation In C++
 #include <iostream>
 using namespace std;
 
