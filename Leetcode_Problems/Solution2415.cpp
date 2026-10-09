@@ -33,6 +33,8 @@ class Solution {
             return nullptr;
         }
         TreeNode *node = new TreeNode(arr[index]);
+
+        // Recursively insert left and right children
         node->left = insert(arr, n);
         node->right = insert(arr, n);
         return node;
