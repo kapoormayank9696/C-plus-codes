@@ -1,7 +1,8 @@
-
+// Linked List in Binary Tree Algorithm Implementation In C++
 #include <iostream>
 using namespace std;
 
+// TreeNode class
 class TreeNode {
     public:
     
