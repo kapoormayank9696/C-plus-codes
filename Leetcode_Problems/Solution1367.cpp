@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+// TreeNode class
 class TreeNode {
     public:
     
@@ -18,6 +19,7 @@ class TreeNode {
     }
 };
 
+// ListNode class
 class ListNode {
     public:
     
