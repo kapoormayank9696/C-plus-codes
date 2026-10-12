@@ -22,6 +22,7 @@ int main() {
     for (int num : nums) {
         cout << num << " ";
     }
+    
     cout << "\nSum Of Squares from An Array: " << sumOfSquares(nums, n);
     return 0;
 }
