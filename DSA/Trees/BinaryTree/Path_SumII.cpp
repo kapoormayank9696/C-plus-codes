@@ -43,7 +43,7 @@ class Solution {
     }
 
     // Function to help the Path Sum II
-    void solve(TreeNode* root,int targetSum,vector<vector<int>> result,vector<int> list) {
+    void solve(TreeNode* root,int targetSum,vector<vector<int>>& result,vector<int>& list) {
         if (root == nullptr) {
             return;
         }
@@ -82,7 +82,10 @@ class Solution {
 
 // Main function
 int main() {
-    int nums[] = {5, 4, 11, -1, 7, -1, -1, 2, -1, -1, 8, 13, -1, -1, 4, 5, -1, -1, 1, -1, -1};
+    int nums[] = {
+        5, 4, 11, 7, -1, -1, 2, -1, -1,
+        -1, 8, 13, -1, -1, 4, 5, -1, -1, 1, -1, -1
+    };
     int n = sizeof(nums)/sizeof(nums[0]);
     Solution sol;
 
