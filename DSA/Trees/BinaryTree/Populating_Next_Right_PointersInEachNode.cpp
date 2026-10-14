@@ -1,4 +1,4 @@
-// Populating Next Right Pointers in Each Node
+// Populating Next Right Pointers in Each Node Algorithm Implementation In C++
 #include <iostream>
 using namespace std;
 
