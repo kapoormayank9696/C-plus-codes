@@ -1,5 +1,4 @@
 // LeetCode Problem 116: Populating Next Right Pointers in Each Node
-
 #include <iostream>
 using namespace std;
 
