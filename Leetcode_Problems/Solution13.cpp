@@ -1,4 +1,4 @@
-// LeetCode Problem 13 : Roman to Integer
+// LeetCode Problem 13: Roman to Integer
 #include <iostream>
 #include <string>
 using namespace std;
