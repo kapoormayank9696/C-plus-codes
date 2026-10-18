@@ -5,10 +5,8 @@ using namespace std;
 // Function to find the sum of 3 fibonnaci series
 bool threeFibonacciSum(int n) {
     int a = 0, b = 1, c = 1;
-    while (a + b + c <= n)
-    {
-        if (a + b + c == n)
-        {
+    while (a + b + c <= n) {
+        if (a + b + c == n) {
             return true;
         }
         int k = b + c;
