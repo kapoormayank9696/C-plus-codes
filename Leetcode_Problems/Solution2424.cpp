@@ -1,4 +1,4 @@
-// LeetCode Problem 2424:Longest Uploaded Prefix
+// LeetCode Problem 2424 : Longest Uploaded Prefix
 #include <iostream>
 #include <vector>
 using namespace std;
