@@ -1,4 +1,4 @@
-// LeetCode Problem 2089 Find Target Indices After Sorting Array
+// LeetCode Problem 2089 : Find Target Indices After Sorting Array
 #include <iostream>
 #include <vector>
 #include <algorithm>
