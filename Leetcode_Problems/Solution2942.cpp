@@ -1,10 +1,10 @@
-// LeetCode Problem Find Words Containing Character
+// LeetCode Problem 2942 : Find Words Containing Character
 #include <iostream>
 #include <vector>
 #include <string>
 using namespace std;
 
-// Function of find word containing into strng array
+// Function of find word containing into string array
 vector<int> findWordsContaining(vector<string> &words, char x) {
     vector<int> arr;
     for (int i = 0; i < words.size(); i++) {
