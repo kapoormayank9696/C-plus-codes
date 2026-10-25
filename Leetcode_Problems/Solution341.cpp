@@ -1,4 +1,4 @@
-// LeetCode Problem Flatten Nested List Iterator
+// LeetCode Problem 341 : Flatten Nested List Iterator
 #include <iostream>
 #include <stack>
 #include <vector>
