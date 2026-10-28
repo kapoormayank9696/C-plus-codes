@@ -30,7 +30,7 @@ void printPreOrder(Node *root) {
     cout << root->val << " ";
 }
 
-// Level Order
+// Level Order Method
 vector<vector<int>> levelOrder(Node *root) {
     vector<vector<int>> result;
 
