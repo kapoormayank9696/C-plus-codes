@@ -1,5 +1,4 @@
 // LeetCode Problem 559: Maximum Depth of N-ary Tree
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
