@@ -19,6 +19,7 @@ class Node {
 // Solution Class
 class Solution {
     public:
+    
     // Function to print N-ary Tree preorder
     void printPreOrder(Node *root) {
         if (root == nullptr) {
