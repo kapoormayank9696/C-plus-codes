@@ -23,6 +23,7 @@ int minMoves2(vector<int>& nums) {
 int main() {
     vector<int> nums = {1, 2, 3};
     cout << "Input array: ";
+    
     for (int num : nums) {
         cout << num << " ";
     }
