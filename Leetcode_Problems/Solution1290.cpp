@@ -4,6 +4,7 @@ using namespace std;
 
 // Class Of Listnode
 class ListNode {
+    // Public Specifier
     public:
     int val;
     ListNode* next;
