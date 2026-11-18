@@ -6,6 +6,8 @@ using namespace std;
 class ListNode {
     // Public Specifier
     public:
+
+    // Data Members
     int val;
     ListNode* next;
     ListNode* prev;
