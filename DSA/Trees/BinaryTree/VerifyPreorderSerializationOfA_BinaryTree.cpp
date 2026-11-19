@@ -8,6 +8,7 @@ using namespace std;
 // Solution Class
 class Solution {
     public:
+    
     // Is Valid Serialization function
     bool isValidSerialization(string preorder) {
         stringstream ss(preorder);
