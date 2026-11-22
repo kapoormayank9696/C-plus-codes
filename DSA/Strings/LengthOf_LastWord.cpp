@@ -5,6 +5,7 @@ using namespace std;
 
 // Solution Class
 class Solution {
+    // Public Access Specifier
     public:
 
     // Length Of Last Word
