@@ -6,6 +6,8 @@ using namespace std;
 // Solution Class
 class Solution {
     public:
+    
+    // Function of Check if All A's Appears Before All B's
     bool checkString(string s) {
         return s.find("ba") == string::npos;
     }
