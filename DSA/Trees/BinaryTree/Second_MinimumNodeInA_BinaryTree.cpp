@@ -67,8 +67,7 @@ class Solution {
 int main() {
     Solution sol;
 
-    vector<int> nodes = {
-        2, 2, -1, -1, 5, 5, -1, -1, 7, -1, -1};
+    vector<int> nodes = {2, 2, -1, -1, 5, 5, -1, -1, 7, -1, -1};
 
     TreeNode* root = sol.buildTree(nodes);
 
