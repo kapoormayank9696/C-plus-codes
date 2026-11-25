@@ -6,6 +6,7 @@ using namespace std;
 
 // TreeNode Class
 class TreeNode {
+    // Public Access Specifier
     public:
     int val;
     TreeNode* left;
